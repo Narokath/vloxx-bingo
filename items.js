@@ -27,10 +27,14 @@ window.BINGO_CONFIG = {
     'Phase transitions have a shorter time limit',
     'An extra Excision Extremis cast in P4',
     'Weapons gain new attacks in P4',
-    'Adds remain alive after phase transitions',
+    'Elites/champions respawn after breakbar',
     'Standing in puddles increases empowerment',
     'Safe areas shrink each phase',
     'Final phase repeats all three weapon mechanics',
-    'Puddles expand over time'
+    'Puddles expand over time',
+    'Excision Extremis hits remove ascension',
+    'Division Eternal hits harder',
+    'Fixate target changes quicker',
+    'Greens need to be resolved quicker'
   ]
 };

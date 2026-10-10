@@ -39,8 +39,8 @@
       button.className = 'square' + (index === 12 ? ' free' : '') + (winning.has(index) ? ' winner' : '');
       button.setAttribute('aria-pressed', String(state.marks[index]));
       if (index === 12) {
-        button.innerHTML = '<img class="free-emoji" src="vloxx_pleasure_pain.png" alt=""><span class="free-label">FREE SPACE</span>';
-        button.setAttribute('aria-label', 'Vloxx Pleasure Pain free space, always marked');
+        button.innerHTML = '<img class="free-emoji" src="vloxx_pleasure_pain.png" alt=""><span class="free-label">So it has<br>come to this</span>';
+        button.setAttribute('aria-label', 'So it has come to this — Vloxx Pleasure Pain free space, always marked');
         button.setAttribute('aria-disabled', 'true');
       } else {
         button.textContent = label;
@@ -105,14 +105,15 @@
       ctx.fillStyle = i === 12 ? '#d95833' : state.marks[i] ? '#243d35' : '#fffdf7'; ctx.fillRect(x, y, 242, 222);
       ctx.fillStyle = state.marks[i] ? '#fffdf7' : '#243d35';
       if (i === 12) {
-        const scale = Math.min(190 / freeEmoji.naturalWidth, 174 / freeEmoji.naturalHeight);
+        const scale = Math.min(176 / freeEmoji.naturalWidth, 158 / freeEmoji.naturalHeight);
         const width = freeEmoji.naturalWidth * scale, height = freeEmoji.naturalHeight * scale;
-        ctx.drawImage(freeEmoji, x + (242 - width) / 2, y + 10 + (174 - height) / 2, width, height);
+        ctx.drawImage(freeEmoji, x + (242 - width) / 2, y + 10 + (158 - height) / 2, width, height);
         ctx.font = '500 18px sans-serif';
-        ctx.fillText('FREE SPACE', x + 121, y + 207);
+        ctx.fillText('So it has', x + 121, y + 187);
+        ctx.fillText('come to this', x + 121, y + 209);
         return;
       }
-      const content = i === 12 ? 'FREE SPACE' : label;
+      const content = label;
       let font = 28, wrapped;
       do {
         ctx.font = `500 ${font}px sans-serif`;

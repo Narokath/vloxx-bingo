@@ -2,7 +2,7 @@
 
 A static GitHub Pages website for predicting which mechanics Vloxx LCM will have.
 
-The pool contains 29 predictions. Each card randomly selects 24, plus a free center square.
+The pool contains 33 predictions. Each card randomly selects 24, plus a free center square.
 
 ## Host setup
 
