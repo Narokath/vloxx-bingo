@@ -22,7 +22,7 @@ window.BINGO_CONFIG = {
     'More champion/elite adds during phase transitions',
     'Two weapons active at once',
     'Fewer orbs spawn',
-    'Tethers break at a shorter distance',
+    'Tethers make you fly further and faster',
     'Spreads overlap with weapon mechanics',
     'Phase transitions have a shorter time limit',
     'An extra Excision Extremis cast in P4',
