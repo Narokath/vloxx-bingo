@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3eee5">
+  <title>Vloxx LCM Bingo</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="items.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main>
+    <div class="workspace">
+      <aside class="controls">
+        <div class="list-info"><strong id="list-name">Predictions</strong><small id="item-count"></small></div>
+        <button class="primary" id="generate">Shuffle a new card <span>↗</span></button>
+        <p>Tap a square to mark it.</p>
+        <div class="actions"><button id="share">↗ &nbsp; Copy card link</button><button id="download">↓ &nbsp; Save as image</button><button id="print">▧ &nbsp; Print / save PDF</button></div>
+        <button class="text-button" id="reset">Clear marked squares</button>
+        <p class="share-note">Links save the current card and marks.</p>
+      </aside>
+      <section class="card-area" aria-label="Your bingo card">
+        <div class="card-topline"><span id="card-id"></span></div>
+        <article class="bingo-card" id="card"><div class="card-heading"><div><h2 id="card-title">Vloxx LCM Bingo</h2></div></div><div class="letters" aria-hidden="true"><span>B</span><span>I</span><span>N</span><span>G</span><span>O</span></div><div id="board" class="board" aria-label="Bingo squares"></div></article>
+        <div class="progress"><span id="progress">0 of 24 squares marked</span><span id="bingo-message"></span></div>
+      </section>
+    </div>
+    <p id="status" role="status" aria-live="polite"></p>
+    <dialog id="link-dialog"><h2>Your card link</h2><p>Copy this link to reopen or share your exact card.</p><textarea id="link-text" readonly aria-label="Shareable card link"></textarea><button id="close-dialog">Done</button></dialog>
+  </main>
+</body>
+</html>

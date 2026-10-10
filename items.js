@@ -1,0 +1,36 @@
+// HOST SETTINGS: use at least 24 unique predictions. Each card randomly selects 24.
+window.BINGO_CONFIG = {
+  title: 'Vloxx LCM Bingo',
+  collection: 'Predictions',
+  items: [
+    'Spreads on more than 3 players',
+    'Excision Extremis on more than 4 players',
+    'Walls instant kill on crossing',
+    'Weapons generate empowerment faster',
+    'At least 30% more health',
+    'Secret extra weapon',
+    'P4 lasts more than 2 minutes',
+    'Tether on 5 players',
+    'Weapons are harder to CC',
+    'Spread puddles persist per phase',
+    'Spear puddles persist per phase',
+    'Spear puddles cannot be blocked/reflected',
+    "Orbs don't remove empowerment",
+    'Lose ascension on echoing blade reds',
+    'Lose ascension on staff red movement',
+    'Lose ascension on spear red movement',
+    'More champion/elite adds during phase transitions',
+    'Two weapons active at once',
+    'Fewer orbs spawn',
+    'Tethers break at a shorter distance',
+    'Spreads overlap with weapon mechanics',
+    'Phase transitions have a shorter time limit',
+    'An extra Excision Extremis cast in P4',
+    'Weapons gain new attacks in P4',
+    'Adds remain alive after phase transitions',
+    'Standing in puddles increases empowerment',
+    'Safe areas shrink each phase',
+    'Final phase repeats all three weapon mechanics',
+    'Puddles expand over time'
+  ]
+};
