@@ -19,6 +19,11 @@
       Array.isArray(data.marks) && data.marks.length === 25 && data.marks.every(x => typeof x === 'boolean') && data.marks[12];
   }
   function persist() {
+    const replacements = {
+      'Tethers break at a shorter distance': 'Tethers make you fly further and faster',
+      'Adds remain alive after phase transitions': 'Elites/champions respawn after breakbar'
+    };
+    state.cells = state.cells.map(label => Object.hasOwn(replacements, label) ? replacements[label] : label);
     if (state.title === 'Vloxx LCM prediction bingo') state.title = config.title;
     try { localStorage.setItem(storageKey, JSON.stringify(state)); } catch { /* Cards still work without storage. */ }
     try { history.replaceState(null, '', '#card=' + encode(state)); } catch { /* Download and clipboard remain available. */ }

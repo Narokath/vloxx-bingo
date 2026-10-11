@@ -35,6 +35,11 @@ window.BINGO_CONFIG = {
     'Excision Extremis hits remove ascension',
     'Division Eternal hits harder',
     'Fixate target changes quicker',
-    'Greens need to be resolved quicker'
+    'Greens need to be resolved quicker',
+    'Rotating P2 Spear Wall',
+    'Start with less than 10 Ascension',
+    'LCM breaks the Convergence',
+    'Release delayed',
+    'Vision Eternal is cast during P4'
   ]
 };

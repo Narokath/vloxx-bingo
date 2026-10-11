@@ -2,7 +2,7 @@
 
 A static GitHub Pages website for predicting which mechanics Vloxx LCM will have.
 
-The pool contains 33 predictions. Each card randomly selects 24, plus a free center square.
+The pool contains 38 predictions. Each card randomly selects 24, plus a free center square.
 
 ## Host setup
 
@@ -19,7 +19,7 @@ Upload `index.html`, `styles.css`, `items.js`, `app.js`, `.nojekyll`, and `vloxx
 ## Cards and sharing
 
 - Shuffle generates a random card. Click predictions to mark them; completed lines are highlighted.
-- Copy card link preserves the predictions, order, title, and current marks. Old links still work after list changes. Copy a fresh link to share updated progress.
+- Copy card link preserves the predictions, order, title, and current marks. Old links still work after list changes. Explicit wording corrections update saved cards without changing their layout or marks. Copy a fresh link to share updated progress.
 - Save as image downloads a PNG. Print / save PDF opens the browser print dialog.
 - The latest card saves automatically when browser storage is available.
 - The short card ID is a label, not a retrieval key. Use the full link to recover a card. No database or accounts are required.
