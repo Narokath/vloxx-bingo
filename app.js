@@ -20,9 +20,35 @@
   }
   function persist() {
     const replacements = {
-      'Tethers break at a shorter distance': 'Tethers make you fly further and faster',
-      'Adds remain alive after phase transitions': 'Elites/champions respawn after breakbar'
-    };
+      "Walls instant kill on crossing": "Crossing walls kills players instantly",
+      "Weapons generate empowerment faster": "Weapons generate Empowerment faster",
+      "Secret extra weapon": "A secret additional weapon",
+      "P4 lasts more than 2 minutes": "P4 lasts longer than 2 minutes",
+      "Tether on 5 players": "Tethers on 5 players",
+      "Weapons are harder to CC": "Weapons are harder to crowd control",
+      "Spread puddles persist per phase": "Spread puddles persist throughout each phase",
+      "Spear puddles persist per phase": "Spear puddles persist throughout each phase",
+      "Spear puddles cannot be blocked/reflected": "Spear puddles cannot be blocked or reflected",
+      "Orbs don't remove empowerment": "Orbs do not remove Empowerment",
+      "Lose ascension on echoing blade reds": "Echoing Blade red attacks remove Ascension",
+      "Lose ascension on staff red movement": "Moving during staff red attacks removes Ascension",
+      "Lose ascension on spear red movement": "Moving during spear red attacks removes Ascension",
+      "More champion/elite adds during phase transitions": "More champion and elite adds during phase transitions",
+      "Tethers make you fly further and faster": "Tethers launch players farther and faster",
+      "An extra Excision Extremis cast in P4": "An additional Excision Extremis cast in P4",
+      "Elites/champions respawn after breakbar": "Elite and champion adds respawn after the breakbar",
+      "Standing in puddles increases empowerment": "Standing in puddles increases Empowerment",
+      "Final phase repeats all three weapon mechanics": "The final phase repeats all three weapon mechanics",
+      "Excision Extremis hits remove ascension": "Excision Extremis hits remove Ascension",
+      "Division Eternal hits harder": "Division Eternal deals more damage",
+      "Fixate target changes quicker": "The Fixate target changes more quickly",
+      "Greens need to be resolved quicker": "Greens must be resolved more quickly",
+      "Rotating P2 Spear Wall": "A rotating spear wall in P2",
+      "Start with less than 10 Ascension": "Start with fewer than 10 stacks of Ascension",
+      "Release delayed": "The release is delayed",
+      "Tethers break at a shorter distance": "Tethers launch players farther and faster",
+      "Adds remain alive after phase transitions": "Elite and champion adds respawn after the breakbar"
+};
     state.cells = state.cells.map(label => Object.hasOwn(replacements, label) ? replacements[label] : label);
     if (state.title === 'Vloxx LCM prediction bingo') state.title = config.title;
     try { localStorage.setItem(storageKey, JSON.stringify(state)); } catch { /* Cards still work without storage. */ }
